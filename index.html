@@ -1,210 +1,234 @@
 <!DOCTYPE html>
 <html lang="es">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>VerifIA | Sistemas de Autenticación Forense</title>
-      <script src="https://cdn.tailwindcss.com"></script>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-      <style>
-         body {
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>VerifIA | Sistemas de Autenticación Forense</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+   <style>
+      body {
          font-family: 'Inter', sans-serif;
          scroll-behavior: smooth;
-         }
-         .bg-cyber {
+      }
+
+      .bg-cyber {
          background-color: #050a14;
-         }
-         .text-accent {
+      }
+
+      .text-accent {
          color: #35bea0;
-         }
-         .border-accent {
+      }
+
+      .border-accent {
          border-color: #35bea0;
-         }
-         .bg-accent {
+      }
+
+      .bg-accent {
          background-color: #35bea0;
-         }
-         .bg-dark-green {
+      }
+
+      .bg-dark-green {
          background-color: #154c35;
-         }
-         .bg-deep-forest {
+      }
+
+      .bg-deep-forest {
          background-color: #1f4636;
-         }
-         .gradient-border {
+      }
+
+      .gradient-border {
          background: linear-gradient(to right, #1f4636, #35bea0);
          height: 2px;
          width: 100px;
-         }
-         .hero-gradient {
-         background: linear-gradient(to bottom right, #050a14, #154c3522);
-         }
-         .glass {
+      }
+
+      .glass {
          background: rgba(255, 255, 255, 0.03);
          backdrop-filter: blur(10px);
-         }
-      </style>
-   </head>
-   <body class="bg-cyber text-gray-200 hero-gradient">
-      <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto sticky top-0 z-50 glass border-b border-white/5">
-         <div class="text-2xl font-bold tracking-tighter text-white">
-            Verif<span class="text-accent">IA</span>
-         </div>
-         <div class="hidden md:flex gap-8 text-xs font-bold tracking-widest uppercase">
-            <a href="#tecnologia" class="hover:text-accent transition">Tecnología</a>
-            <a href="#documentación" class="hover:text-accent transition">Documentación</a>
-            <a href="#contacto" class="hover:text-accent transition">Contacto</a>
-         </div>
-         <a href="#contacto"
-            class="border border-accent text-accent px-4 py-2 rounded-md hover:bg-accent hover:text-black transition text-sm font-semibold uppercase tracking-widest">
+      }
+   </style>
+</head>
+
+<body class="bg-cyber text-gray-200 hero-gradient">
+   <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto sticky top-0 z-50 glass border-b border-white/5">
+      <div class="text-2xl font-bold tracking-tighter text-white">
+         Verif<span class="text-accent">IA</span>
+      </div>
+      <div class="hidden md:flex gap-8 text-xs font-bold tracking-widest uppercase">
+         <a href="#tecnologia" class="hover:text-accent transition">Tecnología</a>
+         <a href="#documentación" class="hover:text-accent transition">Documentación</a>
+         <a href="#contacto" class="hover:text-accent transition">Contacto</a>
+      </div>
+      <a href="#contacto"
+         class="border border-accent text-accent px-4 py-2 rounded-md hover:bg-accent hover:text-black transition text-sm font-semibold uppercase tracking-widest">
          Early Access
-         </a>
-      </nav>
-      <header class="max-w-4xl mx-auto text-center pt-24 pb-32 px-6">
-         <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
-            Proteja su empresa de la <span class="text-accent">suplantación por IA</span>
-         </h1>
-         <p class="text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Verificamos la autenticidad de sus comunicaciones en vivo mediante análisis de ruido neuronal y patrones
-            biomecánicos.
-         </p>
-         <div class="flex justify-center gap-4">
-            <a href="#contacto"
-               class="bg-accent text-black px-8 py-4 rounded-lg font-bold hover:scale-105 transition shadow-[0_0_30px_rgba(53,190,160,0.3)]">
+      </a>
+   </nav>
+   <header class="max-w-4xl mx-auto text-center pt-24 pb-32 px-6">
+      <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
+         Proteja su empresa de la <span class="text-accent">suplantación por IA</span>
+      </h1>
+      <p class="text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+         Verificamos la autenticidad de sus comunicaciones en vivo mediante análisis de ruido neuronal y patrones
+         biomecánicos.
+      </p>
+      <div class="flex justify-center gap-4">
+         <a href="#contacto"
+            class="bg-accent text-black px-8 py-4 rounded-lg font-bold hover:scale-105 transition shadow-[0_0_30px_rgba(53,190,160,0.3)]">
             SOLICITAR AUDITORÍA BETA
-            </a>
+         </a>
+      </div>
+   </header>
+   <section id="tecnologia" class="max-w-6xl mx-auto py-24 px-6 border-t border-white/5">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+         <div>
+            <span class="text-accent font-mono text-sm tracking-widest uppercase">Arquitectura Forense</span>
+            <h2 class="text-4xl font-bold text-white mt-4 mb-6 text-balance">¿Cómo detectamos lo que el oído no percibe?
+            </h2>
+            <p class="text-gray-300 text-lg mb-6">
+               A diferencia de los sistemas tradicionales de biometría de voz, VerifIA no analiza la "identidad" de la
+               persona, sino la <strong>naturaleza física del sonido</strong>.
+            </p>
+            <ul class="space-y-4">
+               <li class="flex gap-3 text-sm italic text-gray-300">
+                  <span class="text-accent">●</span> Análisis de artefactos de generación neuronal (ruido sintético).
+               </li>
+               <li class="flex gap-3 text-sm italic text-gray-300">
+                  <span class="text-accent">●</span> Detección de latencia TTS (Text-to-Speech) en tiempo real.
+               </li>
+               <li class="flex gap-3 text-sm italic text-gray-300">
+                  <span class="text-accent">●</span> Verificación de coherencia acústica ambiental.
+               </li>
+            </ul>
          </div>
-      </header>
-      <section id="tecnologia" class="max-w-6xl mx-auto py-24 px-6 border-t border-white/5">
-         <div class="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-               <span class="text-accent font-mono text-sm tracking-widest uppercase">Arquitectura Forense</span>
-               <h2 class="text-4xl font-bold text-white mt-4 mb-6 text-balance">¿Cómo detectamos lo que el oído no percibe?
-               </h2>
-               <p class="text-gray-300 text-lg mb-6">
-                  A diferencia de los sistemas tradicionales de biometría de voz, VerifIA no analiza la "identidad" de la
-                  persona, sino la <strong>naturaleza física del sonido</strong>.
-               </p>
-               <ul class="space-y-4">
-                  <li class="flex gap-3 text-sm italic text-gray-300">
-                     <span class="text-accent">●</span> Análisis de artefactos de generación neuronal (ruido sintético).
-                  </li>
-                  <li class="flex gap-3 text-sm italic text-gray-300">
-                     <span class="text-accent">●</span> Detección de latencia TTS (Text-to-Speech) en tiempo real.
-                  </li>
-                  <li class="flex gap-3 text-sm italic text-gray-300">
-                     <span class="text-accent">●</span> Verificación de coherencia acústica ambiental.
-                  </li>
-               </ul>
-            </div>
-            <div class="p-1 bg-gradient-to-br from-[#35bea0] to-[#1f4636] rounded-2xl shadow-2xl">
-               <div class="bg-black rounded-[14px] p-8">
-                  <div class="flex items-center gap-4 mb-8">
-                     <div class="w-3 h-3 rounded-full bg-red-500 animate-pulse"></div>
-                     <span class="text-xs font-mono text-gray-400">ANALYZING WAVEFORM_DATA...</span>
-                  </div>
-                  <div class="space-y-4">
-                     <div class="h-2 bg-gray-800 rounded w-full overflow-hidden">
-                        <div class="h-full bg-accent w-2/3"></div>
-                     </div>
-                     <div class="h-2 bg-gray-800 rounded w-full overflow-hidden">
-                        <div class="h-full bg-[#1f4636] w-1/2"></div>
-                     </div>
-                     <div class="text-[10px] font-mono text-gray-400 mt-4 leading-relaxed">
-                        <p>[CMD]: SCANNING FOR SYNTHETIC PATTERNS...</p>
-                        <p>[RESULT]: ANOMALY DETECTED IN HIGH-FREQUENCY SPECTRUM.</p>
-                        <p>[STATUS]: <span class="text-red-500 font-bold uppercase">Cloned Voice Alert</span></p>
-                        <p>[STATUS]: <span class="text-red-500 font-bold uppercase">Ending the call</span></p>
-                        <p>[STATUS]: <span class="text-green-500 font-bold uppercase">Call Terminated Successfully</span>
-                        </p>
-                     </div>
-                  </div>
+         <div class="p-1 bg-gradient-to-br from-[#35bea0] to-[#1f4636] rounded-2xl shadow-2xl">
+            <div class="bg-black rounded-[14px] p-8">
+               <div class="flex items-center gap-4 mb-8">
+                  <div class="w-3 h-3 rounded-full bg-red-500 animate-pulse"></div>
+                  <span class="text-xs font-mono text-gray-400">ANALYZING WAVEFORM_DATA...</span>
                </div>
-            </div>
-         </div>
-      </section>
-      <section id="documentación" class="max-w-6xl mx-auto py-24 px-6 border-t border-white/5">
-         <h2 class="text-3xl font-bold text-white mb-12 text-center uppercase tracking-tighter">Documentación Técnica</h2>
-         <div class="grid md:grid-cols-3 gap-8">
-            <a href="#"
-               class="group block p-8 bg-white/5 rounded-2xl border border-white/10 hover:bg-accent transition-all duration-500 shadow-2xl">
-               <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-black transition-colors italic">API Reference
-               </h3>
-               <div class="bg-accent/10 group-hover:bg-black/10 p-4 rounded-lg">
-                  <p class="text-black font-black text-sm leading-relaxed uppercase tracking-tight">
-                     Integra nuestro motor de autenticación forense directamente en tus aplicaciones.
-                  </p>
-               </div>
-            </a>
-            <a href="#"
-               class="group block p-8 bg-white/5 rounded-2xl border border-white/10 hover:bg-accent transition-all duration-500 shadow-2xl">
-               <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-black transition-colors italic">SDKs</h3>
-               <div class="bg-accent/10 group-hover:bg-black/10 p-4 rounded-lg">
-                  <p class="text-black font-black text-sm leading-relaxed uppercase tracking-tight">
-                     Librerías oficiales para Python, Java y Node.js. Implementación rápida y segura.
-                  </p>
-               </div>
-            </a>
-            <a href="#"
-               class="group block p-8 bg-white/5 rounded-2xl border border-white/10 hover:bg-accent transition-all duration-500 shadow-2xl">
-               <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-black transition-colors italic">Whitepaper
-               </h3>
-               <div class="bg-accent/10 group-hover:bg-black/10 p-4 rounded-lg">
-                  <p class="text-black font-black text-sm leading-relaxed uppercase tracking-tight">
-                     Explora la ciencia y los algoritmos detrás de nuestra capa de confianza VerifIA.
-                  </p>
-               </div>
-            </a>
-         </div>
-      </section>
-      <section id="contacto" class="max-w-4xl mx-auto py-24 px-6 border-t border-white/5">
-         <div class="grid md:grid-cols-5 gap-12 items-start">
-            <div class="md:col-span-2">
-               <h2 class="text-3xl font-bold text-white mb-4 italic text-accent">Hablemos.</h2>
-               <p class="text-gray-300 text-base mb-8 leading-relaxed">
-                  ¿Buscas una solución para tu departamento financiero o quieres integrar nuestro motor en tu software?
-               </p>
                <div class="space-y-4">
-                  <p class="text-xs font-bold tracking-widest uppercase text-accent">Contacto Directo</p>
-                  <a href="mailto:verifia.systems@gmail.com"
-                     class="text-white hover:text-accent transition block text-lg underline font-medium">
-                  verifia.systems@gmail.com
+                  <div class="h-2 bg-gray-800 rounded w-full overflow-hidden">
+                     <div class="h-full bg-accent w-2/3"></div>
+                  </div>
+                  <div class="h-2 bg-gray-800 rounded w-full overflow-hidden">
+                     <div class="h-full bg-[#1f4636] w-1/2"></div>
+                  </div>
+                  <div class="text-[10px] font-mono text-gray-400 mt-4 leading-relaxed">
+                     <p>[CMD]: SCANNING FOR SYNTHETIC PATTERNS...</p>
+                     <p>[RESULT]: ANOMALY DETECTED IN HIGH-FREQUENCY SPECTRUM.</p>
+                     <p>[STATUS]: <span class="text-red-500 font-bold uppercase">Cloned Voice Alert</span></p>
+                     <p>[STATUS]: <span class="text-red-500 font-bold uppercase">Ending the call</span></p>
+                     <p>[STATUS]: <span class="text-green-500 font-bold uppercase">Call Terminated Successfully</span>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section id="documentación" class="max-w-6xl mx-auto py-24 px-6 border-t border-white/5">
+      <h2 class="text-3xl font-bold text-white mb-12 text-center uppercase tracking-tighter">Documentación Técnica</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+
+         <a href="#"
+            class="group block p-8 bg-transparent border border-white/10 rounded-2xl hover:border-accent hover:bg-white/5 transition-all duration-300">
+            <div class="flex items-center gap-3 mb-4">
+               <div class="w-1.5 h-1.5 bg-accent rounded-full shadow-[0_0_8px_#35bea0]"></div>
+               <h3 class="text-2xl font-semibold text-white italic">API Reference</h3>
+            </div>
+            <p class="text-gray-300 font-normal text-sm leading-relaxed">
+               Integra nuestro motor de autenticación forense directamente en tus aplicaciones mediante nuestra API
+               REST.
+            </p>
+         </a>
+
+         <a href="#"
+            class="group block p-8 bg-transparent border border-white/10 rounded-2xl hover:border-accent hover:bg-white/5 transition-all duration-300">
+            <div class="flex items-center gap-3 mb-4">
+               <div class="w-1.5 h-1.5 bg-accent rounded-full shadow-[0_0_8px_#35bea0]"></div>
+               <h3 class="text-2xl font-semibold text-white italic">SDKs</h3>
+            </div>
+            <p class="text-gray-200 font-normal text-sm leading-relaxed">
+               Librerías oficiales para Python, Java y Node.js diseñadas para una implementación rápida y segura.
+            </p>
+         </a>
+
+         <a href="#"
+            class="group block p-8 bg-transparent border border-white/10 rounded-2xl hover:border-accent hover:bg-white/5 transition-all duration-300">
+            <div class="flex items-center gap-3 mb-4">
+               <div class="w-1.5 h-1.5 bg-accent rounded-full shadow-[0_0_8px_#35bea0]"></div>
+               <h3 class="text-2xl font-semibold text-white italic">Whitepaper</h3>
+            </div>
+            <p class="text-gray-200 font-normal text-sm leading-relaxed">
+               Explora la investigación científica y los algoritmos que sustentan nuestra tecnología de detección.
+            </p>
+         </a>
+
+      </div>
+   </section>
+   <section id="contacto" class="max-w-4xl mx-auto py-24 px-6 border-t border-white/5">
+      <div class="grid md:grid-cols-5 gap-12 items-start">
+         <div class="md:col-span-2">
+            <h2 class="text-3xl font-bold text-white mb-4 italic text-accent">Hablemos.</h2>
+            <p class="text-gray-300 text-base mb-8 leading-relaxed">
+               ¿Buscas una solución para tu departamento financiero o quieres integrar nuestro motor en tu software?
+            </p>
+            <div class="space-y-6">
+               <p class="text-xs font-bold tracking-widest uppercase text-accent">Canal Directo</p>
+               <div class="inline-block">
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=verifia.systems@gmail.com&su=Consulta%20VerifIA"
+                     target="_blank"
+                     class="flex items-center gap-3 bg-transparent border-2 border-accent text-accent px-6 py-3 rounded-full font-bold uppercase text-xs tracking-widest hover:bg-accent hover:text-black transition-all duration-300 shadow-[0_0_15px_rgba(53,190,160,0.2)] hover:shadow-[0_0_25px_rgba(53,190,160,0.5)] active:scale-95">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                           d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                     </svg>
+                     Send Email
                   </a>
                </div>
+               <p class="text-gray-500 text-[10px] italic">Se abrirá una nueva pestaña en Gmail</p>
             </div>
-            <div class="md:col-span-3 bg-white/5 p-8 rounded-2xl border border-white/10 shadow-2xl">
-               <form action="https://formspree.io/f/TU_ID_AQUI" method="POST" class="space-y-4">
-                  <div class="grid grid-cols-2 gap-4">
-                     <input type="text" name="nombre" placeholder="Nombre" required
-                        class="w-full p-4 bg-black/50 border border-white/10 rounded-lg focus:border-accent outline-none text-white transition placeholder:text-white font-medium">
-                     <input type="text" name="empresa" placeholder="Empresa" required
-                        class="w-full p-4 bg-black/50 border border-white/10 rounded-lg focus:border-accent outline-none text-white transition placeholder:text-white font-medium">
-                  </div>
-                  <input type="email" name="email" placeholder="Email corporativo" required
-                     class="w-full p-4 bg-black/50 border border-white/10 rounded-lg focus:border-accent outline-none text-white transition placeholder:text-white font-medium">
-                  <textarea name="mensaje" rows="4" placeholder="¿Cómo podemos ayudarle?"
-                     class="w-full p-4 bg-black/50 border border-white/10 rounded-lg focus:border-accent outline-none text-white transition placeholder:text-white font-medium"></textarea>
-                  <button type="submit"
-                     class="w-full bg-accent text-black font-extrabold py-5 rounded-lg hover:shadow-[0_0_25px_rgba(53,190,160,0.5)] transition uppercase tracking-[0.2em] text-sm mt-4">
+         </div>
+         <div class="md:col-span-3 bg-transparent p-8 rounded-2xl border border-white/10 shadow-2xl">
+            <form action="https://formspree.io/f/xlgwllel" method="POST" class="space-y-4">
+               <div class="grid grid-cols-2 gap-4">
+                  <input type="text" name="nombre" placeholder="Nombre" required
+                     class="w-full p-4 bg-white/5 border border-white/10 rounded-lg focus:border-accent focus:bg-black/40 outline-none text-white transition-all placeholder:text-gray-400 font-medium">
+                  <input type="text" name="empresa" placeholder="Empresa" required
+                     class="w-full p-4 bg-white/5 border border-white/10 rounded-lg focus:border-accent focus:bg-black/40 outline-none text-white transition-all placeholder:text-gray-400 font-medium">
+               </div>
+               <input type="email" name="email" placeholder="Email corporativo" required
+                  class="w-full p-4 bg-white/5 border border-white/10 rounded-lg focus:border-accent focus:bg-black/40 outline-none text-white transition-all placeholder:text-gray-400 font-medium">
+               <textarea name="mensaje" rows="4" placeholder="¿Cómo podemos ayudarle?"
+                  class="w-full p-4 bg-white/5 border border-white/10 rounded-lg focus:border-accent focus:bg-black/40 outline-none text-white transition-all placeholder:text-gray-400 font-medium"></textarea>
+
+               <button type="submit"
+                  class="w-full bg-accent text-black font-black py-5 rounded-lg hover:shadow-[0_0_35px_rgba(53,190,160,0.6)] active:scale-[0.98] transition-all duration-200 uppercase tracking-[0.2em] text-sm mt-4">
                   Enviar Consulta
-                  </button>
-               </form>
-            </div>
+               </button>
+            </form>
          </div>
-      </section>
-      <footer class="py-16 text-center border-t border-white/5 bg-gradient-to-t from-black to-transparent">
-         <div class="inline-block bg-accent px-4 py-1 rounded-full mb-8 shadow-[0_0_15px_rgba(53,190,160,0.2)]">
-            <p class="text-black text-[10px] font-black tracking-[0.3em] uppercase">
-               VerifIA &copy; 2026 | Forensic AI Trust Layer
-            </p>
-         </div>
-         <div class="flex flex-wrap justify-center gap-8 text-white font-bold text-xs tracking-[0.2em] uppercase">
-            <span class="hover:text-accent transition-colors duration-300 cursor-default">A Coruña</span>
-            <span class="text-accent/30">•</span>
-            <span class="hover:text-accent transition-colors duration-300 cursor-default">Vigo</span>
-            <span class="text-accent/30">•</span>
-            <span class="hover:text-accent transition-colors duration-300 cursor-default">Ourense</span>
-            <span class="text-accent/30">•</span>
-            <span class="hover:text-accent transition-colors duration-300 cursor-default">O Carballiño</span>
-         </div>
-      </footer>
-   </body>
+      </div>
+   </section>
+   <footer class="py-16 text-center border-t border-white/5 bg-gradient-to-t from-black to-transparent">
+      <div class="inline-block bg-accent px-4 py-1 rounded-full mb-8 shadow-[0_0_15px_rgba(53,190,160,0.2)]">
+         <p class="text-black text-[10px] font-black tracking-[0.3em] uppercase">
+            VerifIA &copy; 2026 | Forensic AI Trust Layer
+         </p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-8 text-white font-bold text-xs tracking-[0.2em] uppercase">
+         <span class="hover:text-accent transition-colors duration-300 cursor-default">A Coruña</span>
+         <span class="text-accent/30">•</span>
+         <span class="hover:text-accent transition-colors duration-300 cursor-default">Vigo</span>
+         <span class="text-accent/30">•</span>
+         <span class="hover:text-accent transition-colors duration-300 cursor-default">Ourense</span>
+         <span class="text-accent/30">•</span>
+         <span class="hover:text-accent transition-colors duration-300 cursor-default">O Carballiño</span>
+      </div>
+   </footer>
+</body>
+
 </html>
